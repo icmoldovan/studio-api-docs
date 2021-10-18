@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.TranslationStudioAutomation.Licensing.dll",
             "Sdl.TranslationStudioAutomation.IntegrationApi.Extensions.dll",
@@ -29,7 +29,7 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.Verification.Api.dll"
           ]	 
@@ -42,7 +42,7 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.Terminology.TerminologyProvider.Core.dll"
           ]	 
@@ -55,7 +55,7 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.Core.Globalization.dll",
             "Sdl.Core.PluginFramework.dll",
@@ -70,7 +70,7 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.FileTypeSupport.Framework.PreviewControls.dll",
             "Sdl.FileTypeSupport.Framework.Core.Utilities.dll",
@@ -87,7 +87,7 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.LanguagePlatform.TranslationMemoryApi.dll",
             "Sdl.Core.FineGrainedAlignment.dll",
@@ -106,7 +106,7 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.ProjectAutomation.Settings.dll",
             "Sdl.ProjectAutomation.FileBased.dll",
@@ -121,7 +121,7 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.ProjectAutomation.AutomaticTasks.dll"
           ]	 
@@ -176,7 +176,7 @@
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "filemetadata":
+    "fileMetadata":
     { 
       "langs": {
       "api/**.yml": ["csharp", "vb", "fsharp", "cpp"]
