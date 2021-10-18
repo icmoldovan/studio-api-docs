@@ -3,23 +3,23 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.TranslationStudioAutomation.Licensing.dll",
             "Sdl.TranslationStudioAutomation.IntegrationApi.Extensions.dll",
             "Sdl.TranslationStudioAutomation.IntegrationApi.dll",
             "Sdl.TranslationStudio.Api.dll",
-            "Sdl.TellMe.ProviderApi.dll",       
-            "Sdl.LanguageCloud.IdentityApi.dll",           
+            "Sdl.TellMe.ProviderApi.dll",
+            "Sdl.LanguageCloud.IdentityApi.dll",
             "Sdl.DesktopEditor.EditorApi.dll",
             "Sdl.DesktopEditor.BasicControls.dll",
             "Sdl.Desktop.Platform.Controls.dll",
             "Sdl.Desktop.IntegrationApi.Extensions.dll",
             "Sdl.Desktop.IntegrationApi.dll",
             "Sdl.Versioning.dll",
-            "Sdl.Desktop.Platform.Styles.dll",            
+            "Sdl.Desktop.Platform.Styles.dll",
             "Sdl.Common.Licensing.AppSupport.dll"
-          ]	 
+          ]
         }
       ],
       "dest": "api/integration",
@@ -29,10 +29,10 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.Verification.Api.dll"
-          ]	 
+          ]
         }
       ],
       "dest": "api/verification",
@@ -42,10 +42,10 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.Terminology.TerminologyProvider.Core.dll"
-          ]	 
+          ]
         }
       ],
       "dest": "api/terminology",
@@ -55,12 +55,12 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.Core.Globalization.dll",
             "Sdl.Core.PluginFramework.dll",
             "Sdl.Core.Settings.dll"
-          ]	 
+          ]
         }
       ],
       "dest": "api/core",
@@ -70,14 +70,14 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.FileTypeSupport.Framework.PreviewControls.dll",
             "Sdl.FileTypeSupport.Framework.Core.Utilities.dll",
             "Sdl.FileTypeSupport.Framework.Core.Settings.dll",
             "Sdl.FileTypeSupport.Framework.Core.dll",
             "Sdl.FileTypeSupport.Filters.Verifiers.GenericTagVerifier.dll"
-          ]	 
+          ]
         }
       ],
       "dest": "api/filetypesupport",
@@ -87,7 +87,7 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.LanguagePlatform.TranslationMemoryApi.dll",
             "Sdl.Core.FineGrainedAlignment.dll",
@@ -96,7 +96,7 @@
             "Sdl.Core.TM.ImportExport.dll",
             "Sdl.LanguagePlatform.Core.dll"
 
-          ]	 
+          ]
         }
       ],
       "dest": "api/translationmemory",
@@ -106,12 +106,12 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.ProjectAutomation.Settings.dll",
             "Sdl.ProjectAutomation.FileBased.dll",
             "Sdl.ProjectAutomation.Core.dll"
-          ]	 
+          ]
         }
       ],
       "dest": "api/projectautomation",
@@ -121,10 +121,10 @@
     {
       "src": [
         {
-          "src": "../../Code/Bin/Mixed Platforms/Debug",
+          "src": "../../Bin/Mixed Platforms/Debug",
           "files": [
             "Sdl.ProjectAutomation.AutomaticTasks.dll"
-          ]	 
+          ]
         }
       ],
       "dest": "api/batchtasks",
@@ -148,12 +148,12 @@
           "*.md"
         ]
       },
-	    { 
-	      "files": [
+      {
+        "files": [
           "apiconcepts/**.md",
           "apiconcepts/toc.yml"
         ]
-      }		
+      }
     ],
     "resource": [
       {
@@ -176,10 +176,9 @@
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "filemetadata":
-    { 
+    "fileMetadata": {
       "langs": {
-      "api/**.yml": ["csharp", "vb", "fsharp", "cpp"]
+        "api/**.yml": [ "csharp", "vb", "fsharp", "cpp" ]
       }
     },
     "template": [
