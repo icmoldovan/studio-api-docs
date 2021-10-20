@@ -4,6 +4,7 @@
 # https://aka.ms/yaml
 
 trigger: none
+pr: none
 
 pool:
   vmImage: windows-latest
@@ -21,12 +22,26 @@ steps:
 - task: DocFxTask@0
   inputs:
     solution: 'docfx.json'
-
-- task: CreatePullRequest@1
+- task: PowerShell@2
   inputs:
-    repoType: 'GitHub'
-    githubEndpoint: 'icmoldovan'
-    githubRepository: '$(Build.Repository.Name)'
-    sourceBranch: '$(Build.SourceBranch)'
-    targetBranch: 'main'
-    title: 'test'
+    targetType: 'inline'
+    script: |
+      $repoURL =  "https://RWS:$env:GITHUB_TOKEN@github.com/icmoldovan/studio-api-docs"
+      git clone --depth 1 $repoURL
+      cd studio-api-docs
+      git checkout main
+      git config --global user.name "imoldovan@sdl.com"
+      git config --global user.email "icmoldovan"
+      copy-item -path ..\docfx_project\api\ -destination .\ -force -recurse
+      git commit -a -m "update api doc"
+      git -c http.extraheader="AUTHORIZATION: bearer $env:GITHUB_TOKEN" push
+  env: 
+    GITHUB_TOKEN: $(GITHUB_TOKEN)
+#- task: CreatePullRequest@1
+#  inputs:
+#    repoType: 'GitHub'
+#    githubEndpoint: 'icmoldovan'
+#    githubRepository: '$(Build.Repository.Name)'
+#    sourceBranch: '$(Build.SourceBranch)'
+#    targetBranch: 'main'
+#    title: 'test'
