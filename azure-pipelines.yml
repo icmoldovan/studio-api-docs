@@ -1,0 +1,32 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger: none
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'specific'
+    project: '3d68cc84-2fee-45a5-9a2c-27d1429712fc'
+    definition: '1258'
+    buildVersionToDownload: 'latestFromBranch'
+    branchName: 'refs/heads/Release/16.2'
+    artifactName: 'binaries'
+    targetPath: '$(Pipeline.Workspace)\..\Bin\Mixed Platforms\Release'
+- task: DocFxTask@0
+  inputs:
+    solution: 'docfx.json'
+
+- task: CreatePullRequest@1
+  inputs:
+    repoType: 'GitHub'
+    githubEndpoint: 'icmoldovan'
+    githubRepository: '$(Build.Repository.Name)'
+    sourceBranch: '$(Build.SourceBranch)'
+    targetBranch: 'main'
+    title: 'test'
