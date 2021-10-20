@@ -17,7 +17,7 @@ steps:
     buildVersionToDownload: 'latestFromBranch'
     branchName: 'refs/heads/Release/16.2'
     artifactName: 'binaries'
-    targetPath: '$(Pipeline.Workspace)\..\Bin\Mixed Platforms\Release'
+    targetPath: '$(Pipeline.Workspace)\..\Code\Bin\Mixed Platforms\Debug'
 - task: DocFxTask@0
   inputs:
     solution: 'docfx.json'
