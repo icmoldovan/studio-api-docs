@@ -32,7 +32,7 @@ steps:
       git checkout main
       git config --global user.name "imoldovan@sdl.com"
       git config --global user.email "icmoldovan"
-      copy-item -path ..\docfx_project\api\ -destination .\ -force -recurse
+      copy-item -path ..\api\ -destination .\ -force -recurse
       git commit -a -m "update api doc"
       git -c http.extraheader="AUTHORIZATION: bearer $env:GITHUB_TOKEN" push
   env: 
